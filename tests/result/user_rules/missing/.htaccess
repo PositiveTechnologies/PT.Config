@@ -1,0 +1,4 @@
+DirectoryIndex index.php
+<Directory /home/mypath>
+
+</Directory>

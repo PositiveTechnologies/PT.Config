@@ -1,0 +1,5 @@
+DirectoryIndex index.php
+<Directory /home/mypath>
+    ServerSignature Off
+	Options -Multiviews -Indexes -ExecCGI -Includes
+</Directory>
