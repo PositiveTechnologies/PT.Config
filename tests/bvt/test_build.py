@@ -2,7 +2,7 @@ import subprocess
 import sys
 import os
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..' 'ai_config'))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'PT.Config'))
 sys.path.insert(0, os.path.join(os.path.dirname(__file__)))
 
 
