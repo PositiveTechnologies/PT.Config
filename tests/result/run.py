@@ -6,7 +6,7 @@ from xml.dom.minidom import parseString
 from collections import defaultdict, namedtuple
 
 vuln = namedtuple('vuln', ['function', 'existing_value', 'recommended_value'])
-os.chdir('../../src')
+os.chdir('../src')
 
 
 def run(src, **kwargs):
