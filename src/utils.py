@@ -20,16 +20,6 @@ def is_frozen():
     return getattr(sys, 'frozen', False)
 
 
-def getappdir():
-    if is_frozen():
-        application_path = os.path.dirname(sys.executable)
-        prod = os.path.join(application_path, '../php')
-        dev = os.path.join(application_path, '../dist')
-        return prod if os.path.exists(prod) else dev
-    application_path = os.path.dirname(__file__)
-    return os.path.join(application_path, '../dist')
-
-
 def check_disk_free_space(path):
     c = wmi.WMI()
     drive, _ = os.path.splitdrive(path)
