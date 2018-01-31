@@ -7,12 +7,9 @@ with open('version.py', 'w') as f:
     f.write("version = '%s'" % version)
 
 os.chdir('../src')
-os.system('xcopy /s /y "main.py" "../build"')
-os.system('xcopy /s /y "lighttpd.py" "../build"')
+os.system('xcopy /s /y "*.py" "../build"')
 os.system('xcopy /s /y "config.spec" "../build"')
 os.system('xcopy /s /y "inner_rules" "../build"')
-
-os.system("{} setup.py build --build-lib=../dist --build-temp=../build".format(sys.executable))
 
 os.chdir('../build')
 os.system('{} ../PyInstaller-3.2/pyinstaller.py "config.spec" -y --distpath="../build"'.format(sys.executable))

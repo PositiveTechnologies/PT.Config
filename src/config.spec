@@ -2,9 +2,6 @@
 import os
 
 a = Analysis(['main.py'],
-             hiddenimports=['xml.dom', 'xml.etree.ElementTree', 'chardet', 'json',
-                            'configparser', 'nginxparser', 'lxml.etree', 'ply.lex', 'ply.yacc', 'wmi',
-                            'lighttpd',],
              datas=[
                  ('*.js', 'inner_rules'),
                  ('.htaccess.js', 'inner_rules'),

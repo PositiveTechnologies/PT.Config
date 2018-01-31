@@ -28,13 +28,13 @@ def test_ply():
 
 def test_exe_refs():
     r = [
+        '_bz2.cp35-win_amd64.pyd',
         '_ctypes.cp35-win_amd64.pyd',
         '_hashlib.cp35-win_amd64.pyd',
-        '_elementtree.cp35-win_amd64.pyd ',
         '_lzma.cp35-win_amd64.pyd ',
         '_socket.cp35-win_amd64.pyd',
         '_ssl.cp35-win_amd64.pyd',
-        '_bz2.cp35-win_amd64.pyd',
+        'lxml.etree.cp35-win_amd64.pyd ',
         'conf.exe',
         'conf.exe.manifest',
         'pyexpat.cp35-win_amd64.pyd',
