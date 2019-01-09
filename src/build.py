@@ -12,7 +12,7 @@ os.system('xcopy /s /y "config.spec" "../build"')
 os.system('xcopy /s /y "inner_rules" "../build"')
 
 os.chdir('../build')
-os.system('{} ../PyInstaller-3.2/pyinstaller.py "config.spec" -y --distpath="../build"'.format(sys.executable))
+os.system('pyinstaller "config.spec" -y --distpath="../build"')
 
 os.system('xcopy /s /y "config" "../dist"')
 os.chdir('../src')
